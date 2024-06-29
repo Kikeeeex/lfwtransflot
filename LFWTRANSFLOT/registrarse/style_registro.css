@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e2238; /* Cambiado a azul */
+    color: #FFF; /* Cambiado a texto blanco */
+}
+
+body *,
+body *::after,
+body *::before {
+    box-sizing: border-box;
+}
+.div {
+    margin: 0; 
+    text-align: center;
+    color: #000; /* Cambiado a negro */
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 50%; /* Achicado el cuadro blanco */
+    max-width: 400px; /* Limitado el ancho máximo */
+    padding: 20px; /* Reducido el padding */
+    background-color: #FFF; /* Cambiado a blanco */
+    border-radius: 15px; /* Añadido */
+    box-shadow: 0px 10px 40px #00000056;
+    margin: 20px;
+    color: #000; /* Cambiado a negro */
+}
+#registro-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #FFF;
+    border-radius: 15px;
+    width: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #000;
+}
+
+
+#registro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem; /* Añadido margen inferior */
+}
+
+#registro-form h1,
+#registro-form h2 {
+    margin: 0; /* Eliminado el margen de los títulos */
+    color: #000; /* Cambiado a negro */
+}
+
+#registro-form input[type="text"],
+#registro-form input[type="email"],
+#registro-form input[type="password"],
+#registro-form input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Separación añadida */
+    background-color: #FFF; /* Cambiado a blanco */
+    color: #000; /* Cambiado a negro */
+}
+
+#registro-form button[type="submit"] {
+    width: 100%;
+    padding: 16px 0px;
+    margin-bottom: 20px; /* Separación añadida */
+    border: none;
+    border-radius: 13px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background: #0e2238; /* Cambiado a azul */
+    color: #FFF; /* Cambiado a texto blanco */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#registro-form button[type="submit"]:hover {
+    box-shadow: 0px 10px 40px -12px #000000;
+}

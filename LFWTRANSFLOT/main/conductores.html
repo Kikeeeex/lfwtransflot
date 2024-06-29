@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LFWTRANSFLOT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">LFWTRANSFLOT</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <!-- <li class="sidebar-header">
+                        Admin Elements
+                    </li> -->
+                    <li class="sidebar-item">
+                        <a href="#inicio.html" class="sidebar-link">
+                            <i class="fa-solid fa-list pe-2"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="conductores.html" class="sidebar-link">
+                            <i class="fa-solid fa-people-group pe-2"></i>
+                            Conductores
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="vehiculos.html" class="sidebar-link">
+                            <i class="fa-solid fa-truck pe-2"></i>
+                            Vehiculos
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-target="#pages" data-bs-toggle="collapse"
+                            aria-expanded="false"><i class="fa-solid fa-route pe-2"></i>
+                            Rutas
+                        </a>
+                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="rutas_activas.html" class="sidebar-link">Activas</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="registro_rutas.html" class="sidebar-link">Registro</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse navbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                <i class="fa-solid fa-user-large"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Profile</a>
+                                <a href="#logout.php" class="dropdown-item">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <h4>Admin Dashboard</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="card flex-fill border-0 illustration">
+                                <div class="card-body p-0 d-flex flex-fill">
+                                    <div class="row g-0 w-100">
+                                        <div class="col-6">
+                                            <div class="p-3 m-1">
+                                                <h4>Welcome Back, Admin</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 align-self-end text-end">
+                                            <img src="image/customer-support.jpg" class="img-fluid illustration-img"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="card flex-fill border-0">
+                                <div class="card-body py-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h4 class="mb-2">
+                                                $ 78.00
+                                            </h4>
+                                            <p class="mb-2">
+                                                Total Earnings
+                                            </p>
+                                            <div class="mb-0">
+                                                <span class="badge text-success me-2">
+                                                    +9.0%
+                                                </span>
+                                                <span class="text-muted">
+                                                    Since Last Month
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Formulario de Registro -->
+                    <div class="container">
+                        <h1 class="mt-5"> Registro de Conductores</h1>
+                        <form id="form-conductores" action="conductores.php" method="post">
+                            <input type="hidden" name="action" value="create">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="nacimiento" name="nacimiento" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cedula" class="form-label">Cédula</label>
+                                <input type="text" class="form-control" id="cedula" name="cedula" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="vencimiento_licencia" class="form-label">Vencimiento de Licencia</label>
+                                <input type="date" class="form-control" id="vencimiento_licencia" name="vencimiento_licencia" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="vencimiento_carta_medica" class="form-label">Vencimiento de Carta Médica</label>
+                                <input type="date" class="form-control" id="vencimiento_carta_medica" name="vencimiento_carta_medica" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </form>
+                
+                        <h2 class="mt-5">Lista de Conductores Registrados</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Nacimiento</th>
+                                        <th>Cédula</th>
+                                        <th>Vencimiento Licencia</th>
+                                        <th>Vencimiento Carta Médica</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="conductores-list">
+                                    <!-- Conductores list will be loaded here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                
+                     <!-- Modal para Editar Conductor -->
+    <div class="modal fade" id="editConductorModal" tabindex="-1" aria-labelledby="editConductorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editConductorModalLabel">Editar Conductor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form id="form-edit-conductor" action="conductores.php" method="post">
+                    <input type="hidden" name="action" value="update">
+                    <input type="hidden" name="id" id="edit-conductor-id">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="edit-nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="edit-nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="edit-apellido" name="apellido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-nacimiento" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="edit-nacimiento" name="nacimiento" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-cedula" class="form-label">Cédula</label>
+                            <input type="text" class="form-control" id="edit-cedula" name="cedula" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-vencimiento_licencia" class="form-label">Vencimiento de Licencia</label>
+                            <input type="date" class="form-control" id="edit-vencimiento_licencia" name="vencimiento_licencia" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="edit-vencimiento_carta_medica" class="form-label">Vencimiento de Carta Médica</label>
+                            <input type="date" class="form-control" id="edit-vencimiento_carta_medica" name="vencimiento_carta_medica" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary">Actualizar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            loadConductores();
+
+            function loadConductores() {
+                $.ajax({
+                    url: 'get_conductores.php',
+                    type: 'GET',
+                    success: function(data) {
+                        $('#conductores-list').html(data);
+                    }
+                });
+            }
+
+            $('#form-conductores').on('submit', function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: 'conductores.php',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        alert(response);
+                        $('#form-conductores')[0].reset();
+                        loadConductores();
+                    }
+                });
+            });
+
+            $(document).on('click', '.edit-conductor', function() {
+                var id = $(this).data('id');
+                var nombre = $(this).data('nombre');
+                var apellido = $(this).data('apellido');
+                var nacimiento = $(this).data('nacimiento');
+                var cedula = $(this).data('cedula');
+                var vencimiento_licencia = $(this).data('vencimiento_licencia');
+                var vencimiento_carta_medica = $(this).data('vencimiento_carta_medica');
+                
+                $('#edit-conductor-id').val(id);
+                $('#edit-nombre').val(nombre);
+                $('#edit-apellido').val(apellido);
+                $('#edit-nacimiento').val(nacimiento);
+                $('#edit-cedula').val(cedula);
+                $('#edit-vencimiento_licencia').val(vencimiento_licencia);
+                $('#edit-vencimiento_carta_medica').val(vencimiento_carta_medica);
+                $('#editConductorModal').modal('show');
+            });
+
+            $('#form-edit-conductor').on('submit', function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: 'conductores.php',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        alert(response);
+                        $('#editConductorModal').modal('hide');
+                        loadConductores();
+                    }
+                });
+            });
+
+            $(document).on('click', '.delete-conductor', function() {
+                if (confirm('¿Estás seguro de que quieres eliminar este conductor?')) {
+                    var id = $(this).data('id');
+                    $.ajax({
+                        url: 'conductores.php',
+                        type: 'POST',
+                        data: { action: 'delete', id: id },
+                        success: function(response) {
+                            alert(response);
+                            loadConductores();
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+            </main>
+            <a href="#" class="theme-toggle">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+            </a>
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-muted">
+                        <div class="col-6 text-start">
+                            <p class="mb-0">
+                                <a href="#" class="text-muted"><strong>LFWTRANSFLOT</strong></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

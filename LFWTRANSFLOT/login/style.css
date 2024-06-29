@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Cambiado a 'Poppins' */
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0e2238; /* Cambiado al color de fondo de .main */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 2vw;
+    color: #FFF; /* Cambiado al color de texto de .main */
+}
+
+.left-login-image {
+    width: 38vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    padding: 30px 35px;
+    background-color: #0e2238; /* Cambiado al color de fondo de .main */
+    border-radius: 25px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #FFF; /* Cambiado al color de texto de .main */
+    font-weight: 600; /* Cambiado el peso de la fuente */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-senha {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.login-senha > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #0e2238; /* Cambiado al color de fondo de .main */
+    color: #FFF; /* Cambiado al color de texto de .main */
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-senha > label {
+    color: #FFF; /* Cambiado al color de texto de .main */
+    margin-bottom: 10px;
+}
+
+.login-senha > input::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Cambiado al color de texto de .main */
+}
+
+.botao {
+    width: 100%;
+    padding: 16px 0px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 13px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600; /* Cambiado el peso de la fuente */
+    letter-spacing: 3px;
+    background: #FFF; /* Cambiado al color de fondo de .main */
+    color: #0e2238; /* Cambiado al color de texto de .main */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao:hover {
+    box-shadow: 0px 10px 40px -12px #000000;
+}
+
+.sign-up {
+    color: #FFF; /* Cambiado al color de texto de .main */
+    font-weight: 600; /* Cambiado el peso de la fuente */
+    margin: 0;
+    text-decoration: none;
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
+.account {
+    color: #FFF; /* Cambiado al color de texto de .main */
+    font-weight: 600; /* Cambiado el peso de la fuente */
+    margin: 0;
+}
+
+.forgot-password {
+    color: #FFF;
+    font-weight: 600; 
+    margin: 5px;
+    text-decoration: none;
+    font-size: small;
+    float: right;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.remember {
+    color: #FFF; 
+    font-weight: 600; 
+    margin-bottom: 15px;
+    font-size: large;
+    float: left;
+}
+
+.what-are-we {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFF; 
+    border-radius: 10px; 
+}
+
+.what-are-we h2 {
+    font-size: 24px; 
+    color: #0e2238;
+    text-align: center;
+}
+
+.what-are-we p {
+    font-size: 18px;
+    color: #0e2238; 
+    text-align: justify; 
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.mision,
+.vision {
+    width: 48%;
+    padding: 20px;
+    background-color: #FFF; 
+    border-radius: 10px;
+}
+
+.mision h3,
+.vision h3 {
+    font-size: 24px;
+    color: #0e2238;
+    text-align: center; 
+}
+
+.mision p,
+.vision p {
+    font-size: 18px;
+    color: #0e2238;
+    text-align: justify; 
+}
+
+.buttons-container {
+    background-color: #0e2238; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+.buttons-container h1 {
+    color: #FFF; 
+font-family: 'Poppins', sans-serif; 
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.buttons-container button {
+background-color: #0e2238; 
+color: #FFF;
+font-family: 'Poppins', sans-serif; 
+font-size: 20px; 
+padding: 15px 30px;
+border: none;
+border-radius: 10px;
+margin-bottom: 10px;
+cursor: pointer;
+width: auto; 
+}
+
+.buttons-container button:hover {
+background-color: #FFF;
+color: #0e2238; 
+}
+
+#ruta-mapa {
+color: #FFF; 
+font-family: 'Poppins', sans-serif; 
+margin-top: 20px; 
+margin-bottom: 20px;
+padding: 20px; 
+background-color: #0e2238; 
+border-radius: 10px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+#ruta-mapa label {
+margin-bottom: 10px; 
+}
+
+#ruta-mapa input {
+width: 100%; 
+padding: 10px; 
+border: none;
+border-radius: 5px; 
+background-color: #FFF;
+margin-bottom: 10px; 
+}
+
+#map {
+height: 400px;
+width: 100%;
+}
+#contacto {
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #0e2238;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contacto h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#contacto .btn-contacto {
+    background-color: #FFF;
+    color: #0e2238;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center; 
+}
+
+#contacto .btn-contacto:hover {
+    background-color: #e3e3e3;
+    margin-right: 10px;
+}
+#contacto .btn-contacto img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px; 
+    object-fit: contain; 
+}
